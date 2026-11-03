@@ -19,5 +19,8 @@ public class RouletteController : MonoBehaviour
 
         // 회전 속도만큼 룰렛을 회전시킴
         transform.Rotate(0f, 0f, this.rotSpeed);
+
+        // 룰렛 감속 시킴
+        this.rotSpeed *= 0.96f;
     }
 }
